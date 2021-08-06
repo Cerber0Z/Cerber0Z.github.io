@@ -172,6 +172,14 @@ header {
     background-color: #c1c1c1;
 }
 
+#botonemail {
+    width: 100%;
+    position: fixed;
+    z-index: 0;
+    margin-top: -94.5%;
+    margin-left: 93.1%;
+}
+
 
 /*---------Servicios------------*/
 
@@ -238,44 +246,25 @@ header {
 
 /*----------Proyectos------------*/
 
-.proyect-section {
-    height: 100%;
+.card-group {
+    margin-top: 75px;
 }
 
-.container-proyect {
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 65px;
-    max-width: 1450px;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 15px;
-    grid-template-areas: initial;
-}
-
-.img-proyect {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    margin-bottom: 50px;
-}
-
-.container-proyect-section {
-    border: 0.5px solid #CBCBCB;
-    background-color: #F8F8F8;
-    box-shadow: 0px 6px 15px rgb(0 0 0 / 25%);
-    border-radius: 10px;
-    padding: 12px;
-    height: 97%;
-    width: 102%;
+.dos {
+    margin-top: 20px;
+    margin-bottom: 45px;
 }
 
 .footer {
     background-color: #F5F5F7;
     width: 100%;
-    height: 60px;
+    height: 100%;
+}
+
+.container-footer {
+    text-align: center;
+    padding: 20px;
+    color: #a2a2a2;
 }
 
 
@@ -330,135 +319,160 @@ header {
     margin-top: 10px;
 }
 
-.img-proyect:hover {
-    background: linear-gradient(0deg, #F8F8F8, #F8F8F8), linear-gradient(0deg, #D0D0D0, #D0D0D0), #D0D0D0;
-    border: 0.5px solid #989797;
-    box-sizing: border-box;
-    background: rgba(56, 56, 56, 0.6);
-    backdrop-filter: blur(25px);
-}
-
-.email {
-    margin-left: 94%;
-}
-
-.container-boton-email {
-    width: 100%;
-    position: fixed;
-    z-index: 0;
-    margin-top: -82.5%;
-    margin-left: -1.9%;
-}
-
 .nav-cv:hover {
     box-shadow: 0px 6px 11px rgb(0 0 0 / 15%);
 }
 
 
-/*---Modal----*/
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-button {
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: inherit;
-}
-
-.btn-group {
-    text-align: center;
-}
-
-.open-modal {
-    font-weight: bold;
-    padding: 0.75rem 1.75rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-}
-
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    background: rgb(0 0 0 / 69%);
-    cursor: pointer;
-    visibility: hidden;
-    opacity: 0;
-    transition-duration: 500ms;
-    z-index: 1;
-}
-
-.modal.is-visible {
-    visibility: visible;
-    opacity: 1;
-}
-
-.modal-dialog {
-    position: relative;
-    max-width: 800px;
-    max-height: 80vh;
-    border-radius: 5px;
-    background: #fff;
-    overflow: auto;
-    cursor: default;
-}
-
-.modal-header,
-.modal-footer {
-    background: #fff;
-}
-
-.modal-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.modal-header .close-modal {
-    font-size: 1.5rem;
-}
-
-
 /*---Mediaquerys---*/
 
-@media screen and (min-width:1808px) and (max-width: 1880px) {
-    .nav-cv {
-        margin-left: 336px;
-    }
-    .tag-name {
-        left: 455px;
-    }
+@media screen and (max-width: 1880px) {
     .hr-skills {
-        margin-top: 73px;
-    }
-    .container-boton-email {
-        margin-top: -86.5%;
-        margin-left: -2.9%;
-    }
-}
-
-@media screen and (min-width:1440px) and (max-width: 1858px) {
-    .nav-cv {
-        margin-left: 300px;
-    }
-    .tag-name {
-        left: 455px;
-    }
-    .hr-skills {
-        margin-top: 63px;
+        margin-top: 58px;
     }
     .container-boton-email {
         margin-top: -88.5%;
+    }
+    .nav-cv {
+        margin-left: 350px;
+        margin-top: -3%;
+    }
+    #botonemail {
+        margin-top: -100.5%;
+        margin-left: 92.1%;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .nav-menu {
+        margin-left: 34.4%;
+    }
+    #logo {
+        margin-left: 0%;
+    }
+    .foto {
+        background-size: 49% 96%;
+    }
+    .tag-skills {
+        margin-top: -29.3%;
+        margin-left: 55%;
+    }
+    .skills-div {
+        width: 18.5%;
+        height: 118px;
+    }
+    #botonemail {
+        margin-top: -126.5%;
+    }
+    .nav-cv {
+        margin-left: 160px;
+        margin-top: -5%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .nav-menu {
+        margin-left: 85px;
+        margin-top: -63px;
+    }
+    header {
+        width: 125%;
+    }
+    .nav-icons {
+        margin-left: 61%;
+    }
+    .nav-cv {
+        margin-top: -15px;
+        margin-left: 100px;
+    }
+    #logo {
+        margin-left: -15%;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .foto {
+        height: 861px;
+        background-size: 50% 77%;
+    }
+    .tag-name {
+        width: 70%;
+        height: 167px;
+        left: 295px;
+        top: 157px;
+    }
+    #hello {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    #name {
+        font-size: 50px;
+        line-height: 65px;
+    }
+    .tag-skills {
+        margin-top: -57%;
+        margin-left: 51%;
+    }
+    .skills-div {
+        width: 18.5%;
+        height: 115px;
+    }
+    #botonemail {
+        margin-top: -155.5%;
+        margin-left: 90.1%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-cv {
+        margin-top: -15px;
+        margin-left: -15px;
+    }
+    .nav-menu {
+        margin-left: -10px;
+        margin-top: -55px;
+    }
+    #logo {
+        margin-left: -17%;
+        margin-top: 18px;
+    }
+    .foto {
+        height: 645px;
+        background-size: 52% 80%;
+    }
+    .tag-name {
+        width: 68%;
+        height: 158px;
+        left: 240px;
+        top: 122px;
+    }
+    #name {
+        font-size: 38px;
+    }
+    .nav-icons {
+        margin-left: 69%;
+    }
+    .icon-skill {
+        width: 80%;
+    }
+    .skills-div {
+        margin-left: 19px;
+        margin-top: -1pc;
+        height: 70px;
+    }
+    .tag-skills {
+        margin-top: -51%;
+        margin-left: 55%;
+    }
+    .img-responsive {
+        height: 36%;
+        margin-left: 15px;
+    }
+    .img-east {
+        height: 36%;
+        margin-left: 15px;
+    }
+    .img-tools {
+        height: 36%;
+        margin-left: 15px;
     }
 }
