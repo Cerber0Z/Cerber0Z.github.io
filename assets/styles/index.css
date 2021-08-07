@@ -10,6 +10,12 @@ a {
     text-decoration: none !important;
 }
 
+.btn-primary {
+    color: #fff;
+    background-color: #f39302 !important;
+    border-color: #f39302 !important;
+}
+
 header {
     background: rgb(248 249 250);
     width: 100%;
