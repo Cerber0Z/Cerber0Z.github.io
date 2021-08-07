@@ -11,7 +11,7 @@ a {
 }
 
 header {
-    background: rgb(255 255 255 / 100%);
+    background: rgb(248 249 250);
     width: 100%;
     position: fixed;
     z-index: 1;
@@ -50,11 +50,15 @@ header {
     margin-bottom: 10px;
 }
 
+.icons-links {
+    width: 50px;
+}
+
 .nav-menu {
     display: flex;
     position: absolute;
-    margin-left: 25.4%;
-    margin-top: -50px;
+    margin-left: 47.4%;
+    margin-top: 15px;
 }
 
 .li-sections {
@@ -176,8 +180,8 @@ header {
     width: 100%;
     position: fixed;
     z-index: 0;
-    margin-top: -94.5%;
-    margin-left: 93.1%;
+    margin-top: -98.5%;
+    margin-left: 92.1%;
 }
 
 
@@ -326,7 +330,7 @@ header {
 
 /*---Mediaquerys---*/
 
-@media screen and (max-width: 1880px) {
+@media screen and (max-width: 1884px) {
     .hr-skills {
         margin-top: 58px;
     }
@@ -334,11 +338,11 @@ header {
         margin-top: -88.5%;
     }
     .nav-cv {
-        margin-left: 350px;
-        margin-top: -3%;
+        margin-left: 680px;
+        margin-top: -6%;
     }
     #botonemail {
-        margin-top: -100.5%;
+        margin-top: -103.5%;
         margin-left: 92.1%;
     }
 }
@@ -362,7 +366,7 @@ header {
         height: 118px;
     }
     #botonemail {
-        margin-top: -126.5%;
+        margin-top: -130.5%;
     }
     .nav-cv {
         margin-left: 160px;
@@ -373,21 +377,21 @@ header {
 @media screen and (max-width:1024px) {
     .nav-menu {
         margin-left: 85px;
-        margin-top: -63px;
+        margin-top: 10px;
     }
     header {
         width: 125%;
     }
     .nav-icons {
-        margin-left: 61%;
+        margin-left: 70%;
     }
     .nav-cv {
         margin-top: -15px;
-        margin-left: 100px;
+        margin-left: 190px;
     }
     #logo {
         margin-left: -15%;
-        margin-top: 30px;
+        margin-top: 5px;
         margin-bottom: 10px;
     }
     .foto {
@@ -417,23 +421,31 @@ header {
         height: 115px;
     }
     #botonemail {
-        margin-top: -155.5%;
-        margin-left: 90.1%;
+        margin-top: -157.5%;
+        margin-left: 89.1%;
     }
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        height: 80px;
+    }
     .nav-cv {
-        margin-top: -15px;
-        margin-left: -15px;
+        margin-left: -6px;
+        margin-top: -16px;
     }
     .nav-menu {
-        margin-left: -10px;
-        margin-top: -55px;
+        margin-left: 48px;
+        margin-top: -5px;
     }
     #logo {
         margin-left: -17%;
         margin-top: 18px;
+        display: none;
+    }
+    #boton-menu {
+        margin-left: -120px;
+        margin-top: 13px;
     }
     .foto {
         height: 645px;
@@ -474,5 +486,58 @@ header {
     .img-tools {
         height: 36%;
         margin-left: 15px;
+    }
+    #botonemail {
+        margin-top: -200.5%;
+        margin-left: 86.1%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .foto {
+        height: 855px;
+        background-size: 98% 60%;
+        background-image: url(../img/foto2.png);
+        margin-top: 60%;
+    }
+    .tag-name {
+        width: 95%;
+        height: 155px;
+        left: 10px;
+        top: 95px;
+        border: 2.8px solid #dedede;
+        padding: 5%;
+    }
+    header {
+        margin-top: -60%;
+    }
+    #name {
+        font-size: 28px;
+    }
+    .tag-skills {
+        margin-top: -77%;
+        margin-left: 9%;
+    }
+    .icon-skill {
+        width: 80%;
+        margin-top: 0px;
+    }
+    .container-services {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .img-responsive {
+        height: 50%;
+        margin-left: 100px;
+        width: 100px;
+    }
+    .img-east {
+        height: 50%;
+        margin-left: 100px;
+        width: 100px;
+    }
+    .img-tools {
+        height: 50%;
+        margin-left: 100px;
+        width: 100px;
     }
 }

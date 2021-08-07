@@ -14,10 +14,14 @@
 <body>
     <header>
         <div class="container">
-            <nav class="nav-default">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light nav-default">
+                <button id="boton-menu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
                 <img id="logo" src="assets/img/logo.png">
-                <div class="nav-ul-li">
-                    <ul class="nav nav-menu">
+                <div class="nav-ul-li collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav nav-menu ">
                         <li class="li-sections">
                             <a href="#">
                                 <p class="text-menu">Inicio</p>
@@ -151,7 +155,8 @@
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <a href="#"><img class="icons-links" src="assets/img/Group 3.png"></a>
+                        <a href="#"><img class="icons-links" src="assets/img/Group 4.png"></a>
                     </div>
                 </div>
                 <div class="card">
@@ -161,7 +166,8 @@
                         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <a href="#"><img class="icons-links" src="assets/img/Group 3.png"></a>
+                        <a href="#"><img class="icons-links" src="assets/img/Group 4.png"></a>
                     </div>
                 </div>
                 <div class="card">
@@ -171,7 +177,8 @@
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <a href="#"><img class="icons-links" src="assets/img/Group 3.png"></a>
+                        <a href="#"><img class="icons-links" src="assets/img/Group 4.png"></a>
                     </div>
                 </div>
             </div>
@@ -183,7 +190,8 @@
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <a href="#"><img class="icons-links" src="assets/img/Group 3.png"></a>
+                        <a href="#"><img class="icons-links" src="assets/img/Group 4.png"></a>
                     </div>
                 </div>
                 <div class="card">
@@ -193,7 +201,8 @@
                         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <a href="#"><img class="icons-links" src="assets/img/Group 3.png"></a>
+                        <a href="#"><img class="icons-links" src="assets/img/Group 4.png"></a>
                     </div>
                 </div>
                 <div class="card">
@@ -203,7 +212,8 @@
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <a href="#"><img class="icons-links" src="assets/img/Group 3.png"></a>
+                        <a href="#"><img class="icons-links" src="assets/img/Group 4.png"></a>
                     </div>
                 </div>
             </div>
@@ -235,24 +245,48 @@
 
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="contact-form">
                         <div class="form-group">
                             <label for="recipient-name" class="col-form-label">Email:</label>
-                            <input type="text" class="form-control" id="recipient-name">
+                            <input type="email" class="form-control" name="user_email" id="recipient-name">
                         </div>
                         <div class="form-group">
                             <label for="message-text" class="col-form-label">Mensaje:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
+                            <textarea class="form-control" name="message" id="message-text"></textarea>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary">Enviar</button>
+                    <input type="submit" class="btn btn-primary" value="Enviar">
                 </div>
             </div>
         </div>
     </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_cnAbhy18X5kfistTtUIFu');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </body>
 
 
