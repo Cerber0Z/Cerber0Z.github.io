@@ -546,6 +546,10 @@ header {
         margin-left: 100px;
         width: 100px;
     }
+    #botonemail {
+        margin-top: -998.5%;
+        margin-left: 75.1%;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -564,6 +568,10 @@ header {
     .foto {
         height: 780px;
     }
+    #botonemail {
+        margin-top: -1101.5%;
+        margin-left: 72.1%;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -575,7 +583,7 @@ header {
         line-height: 10px;
     }
     .tag-name {
-        height: 125px;
+        height: 125px !important;
     }
     .foto {
         height: 660px;
@@ -592,6 +600,10 @@ header {
     .icon-skill {
         margin-top: 6px;
     }
+    #botonemail {
+        margin-top: -1312.5% !important;
+        margin-left: 69.1% !important;
+    }
 }
 
 @media screen and (max-width:414px) {
@@ -603,13 +615,12 @@ header {
 @media screen and (max-width:360px) {
     .tag-name {
         width: 94%;
-        height: 155px;
-        left: 10px;
-        top: 95px;
-        border: 2.8px solid #dedede;
-        padding: 5%;
     }
     #name {
         font-size: 149%;
+    }
+    #botonemail {
+        margin-top: -1175.5%;
+        margin-left: 72.1%;
     }
 }
