@@ -223,17 +223,10 @@
     <a id="botonemail" type="button" data-toggle="modal" data-target="#exampleModal"><img src="assets/img/emails.png" title="Contáctame"></a>
 
     <footer class="footer">
-        <script type="text/javascript" src="assets/js/index.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <div class="container-footer">
             <p>todos los drechos reservados</p>
         </div>
     </footer>
-
-    <!--Modal-->
-    <!-- Button trigger modal -->
 
 
     <!-- Modal -->
@@ -247,46 +240,31 @@
                 <div class="modal-body">
                     <form id="contact-form">
                         <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Email:</label>
-                            <input type="email" class="form-control" name="user_email" id="recipient-name">
+                            <input type="hidden" class="form-control" name="contact_number">
+                            <label>Name</label>
+                            <input type="text" class="form-control" name="user_name">
+                            <label>Email</label>
+                            <input type="email" class="form-control" name="user_email">
+                            <label>Message</label>
+                            <textarea class="form-control" name="message"></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="message-text" class="col-form-label">Mensaje:</label>
-                            <textarea class="form-control" name="message" id="message-text"></textarea>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            <input type="submit" class="btn btn-primary" value="Enviar">
                         </div>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <input type="submit" class="btn btn-primary" value="Enviar">
-                </div>
+
             </div>
         </div>
     </div>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/integration
-            emailjs.init('user_cnAbhy18X5kfistTtUIFu');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
 </body>
 
 
