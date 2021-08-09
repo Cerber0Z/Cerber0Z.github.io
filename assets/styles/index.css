@@ -546,48 +546,70 @@ header {
         margin-left: 100px;
         width: 100px;
     }
-    @media screen and (max-width: 375px) {
-        #name {
-            font-size: 25px;
-        }
-        .img-responsive {
-            margin-left: 80px;
-        }
-        .img-east {
-            margin-left: 80px;
-        }
-        .img-tools {
-            margin-left: 80px;
-        }
-        .foto {
-            height: 780px;
-        }
+}
+
+@media screen and (max-width: 375px) {
+    #name {
+        font-size: 25px;
     }
-    @media screen and (max-width: 320px) {
-        #name {
-            font-size: 21px;
-        }
-        #hello {
-            font-size: 20px;
-            line-height: 10px;
-        }
-        .tag-name {
-            height: 125px;
-        }
-        .foto {
-            height: 660px;
-        }
-        .img-responsive {
-            margin-left: 55px;
-        }
-        .img-east {
-            margin-left: 55px;
-        }
-        .img-tools {
-            margin-left: 55px;
-        }
-        .icon-skill {
-            margin-top: 6px;
-        }
+    .img-responsive {
+        margin-left: 80px;
+    }
+    .img-east {
+        margin-left: 80px;
+    }
+    .img-tools {
+        margin-left: 80px;
+    }
+    .foto {
+        height: 780px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #name {
+        font-size: 21px !important;
+    }
+    #hello {
+        font-size: 20px;
+        line-height: 10px;
+    }
+    .tag-name {
+        height: 125px;
+    }
+    .foto {
+        height: 660px;
+    }
+    .img-responsive {
+        margin-left: 55px;
+    }
+    .img-east {
+        margin-left: 55px;
+    }
+    .img-tools {
+        margin-left: 55px;
+    }
+    .icon-skill {
+        margin-top: 6px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    #name {
+        font-size: 157%;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .tag-name {
+        width: 94%;
+        height: 155px;
+        left: 10px;
+        top: 95px;
+        border: 2.8px solid #dedede;
+        padding: 5%;
+    }
+    #name {
+        font-size: 149%;
     }
 }
