@@ -33,6 +33,16 @@ header {
     margin-left: 682px;
 }
 
+.nav-cv-2 {
+    border: 4.5px solid #F39302;
+    padding: 10px;
+    margin-top: -49px;
+    border-radius: 30px;
+    margin-left: 92%;
+    /* display: table-cell; */
+    display: none;
+}
+
 .text-menu-cv {
     text-align: initial;
     text-decoration: none;
@@ -565,6 +575,9 @@ header {
         margin-left: 45px;
         margin-top: 20px;
     }
+    .nav-cv-2 {
+        display: table-cell;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -627,6 +640,17 @@ header {
         margin-left: 0px;
         margin-top: 20px;
     }
+
+    .nav-cv-2 {
+        border: 4.5px solid #F39302;
+        padding: 10px;
+        margin-top: -49px;
+        border-radius: 30px;
+        margin-left: 92%;
+        display: table-cell;
+ 
+    }
+    
 }
 
 @media screen and (max-width:414px) {
