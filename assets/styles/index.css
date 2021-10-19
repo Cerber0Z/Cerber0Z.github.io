@@ -441,8 +441,8 @@ header {
         margin-top: -16px;
     }
     .nav-menu {
-        margin-left: 48px;
-        margin-top: -5px;
+        margin-left: -45px;
+        margin-top: 20px;
     }
     #logo {
         margin-left: -17%;
@@ -468,6 +468,7 @@ header {
     }
     .nav-icons {
         margin-left: 69%;
+        
     }
     .icon-skill {
         width: 80%;
@@ -550,6 +551,20 @@ header {
         margin-top: -998.5%;
         margin-left: 75.1%;
     }
+    .nav-cv{
+        display:none;
+    }
+    .nav-icons{
+        display:none;
+    }
+    .li-sections {
+        padding-right: 1.5em;
+        list-style: none;
+    }
+    .nav-menu {
+        margin-left: 45px;
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -571,6 +586,10 @@ header {
     #botonemail {
         margin-top: -1101.5%;
         margin-left: 72.1%;
+    }
+    .nav-menu {
+        margin-left: 25px;
+        margin-top: 20px;
     }
 }
 
@@ -601,8 +620,12 @@ header {
         margin-top: 6px;
     }
     #botonemail {
-        margin-top: -1312.5% !important;
+        margin-top: -1350.5% !important;
         margin-left: 69.1% !important;
+    }
+    .nav-menu {
+        margin-left: 0px;
+        margin-top: 20px;
     }
 }
 
